@@ -19,7 +19,9 @@
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
 		"rebornix.Ruby",
-		"brandoncc.vscode-seeing-is-believing"
+		"brandoncc.vscode-seeing-is-believing",
+		"kaiwood.endwise",
+		"yzhang.markdown-all-in-one"
 	],
 	
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
