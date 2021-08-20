@@ -4,7 +4,7 @@
 	"name": "Ruby",
 	"build": {
 		"dockerfile": "Dockerfile",
-		"args": { 
+		"args": {
 			// Update 'VARIANT' to pick a Ruby version: 3, 3.0, 2, 2.7, 2.6
 			"VARIANT": "3",
 			// Options
@@ -12,23 +12,20 @@
 			"NODE_VERSION": "lts/*"
 		}
 	},
-
 	// Set *default* container specific settings.json values on container create.
 	"settings": {},
-
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
 		"rebornix.Ruby",
-		"brandoncc.vscode-seeing-is-believing"
+		"brandoncc.vscode-seeing-is-believing",
+		"kaiwood.endwise",
+		"yzhang.markdown-all-in-one",
+		"emeraldwalk.runonsave"
 	],
-	
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
-
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "ruby --version",
-
+	"postCreateCommand": ".devcontainer/init.sh",
 	// Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "vscode"
-
 }
