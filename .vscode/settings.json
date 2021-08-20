@@ -1,3 +1,11 @@
 {
-  "workbench.colorTheme": "Monokai"
+  "workbench.colorTheme": "Monokai",
+  "emeraldwalk.runonsave": {
+    "commands": [
+      {
+        "match": "\\.md$",
+        "cmd": "renumber-shots ${file} > ${file}.renumber && mv ${file}.renumber ${file}"
+      }
+    ]
+  }
 }
